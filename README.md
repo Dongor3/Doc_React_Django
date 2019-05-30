@@ -1,3 +1,2 @@
-# Doc_React_Django
-
-Documentación alojada en Read the Docs
+# Github
+Cheat_Sheet Spanish
