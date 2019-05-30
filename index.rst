@@ -1,14 +1,18 @@
 
-Do
-======
+Documentacion
+=============
 
-Bienvenidos a la documentacion para el proyecto aquí se detallara el uso de Git y el manejo de Github
+Documentacion para el proyecto aquí se detallara el proyecto en tres secciones.
 
+- Arquitectura del Proyecto.
+- Framework ReactJS.
+- Framework Django.
 
 .. toctree::
    :hidden:
 
    files/frontend
    files/backend
+   files/logic
    
 
