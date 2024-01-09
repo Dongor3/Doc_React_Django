@@ -235,7 +235,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'OpenVenti_Documentacion', u'OpenVenti_Documentacion',
+    ('index', 'Oca_Documentation_Ecuador', u'Oca_Documentation_Ecuador',
      [u'Leonardo Gomez'], 1)
 ]
 
@@ -250,7 +250,7 @@ man_pages = [
 #  dir menu entry, description, category)
 texinfo_documents = [
   ('index', 'Documentacion', u'Documentacion',
-   u'OpenVenti', 'Documentación', 'OpenVenti',
+   u'Oca_Documentation_Ecuador', 'Documentación', 'Oca_Documentation_Ecuador',
    'Miscellaneous'),
 ]
 

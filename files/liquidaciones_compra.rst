@@ -1,3 +1,3 @@
-SOFTWARE
-########
+LIQUIDACION DE COMPRAS
+#####################
 
