@@ -1,8 +1,8 @@
-HARDWARE
-########
+RETENCIONES
+###########
 
-COMPONTENTES NEUMÁTICOS
-========================
+DIARIO CONTABLE
+===============
 
 .. raw:: html
 
@@ -19,8 +19,8 @@ COMPONTENTES NEUMÁTICOS
 ..
 
 
-COMPONTENTES ELECTRÓNICOS
-=========================
+CREACIÓN DE LAS RETENCIONES
+===========================
 
 .. raw:: html
 
@@ -56,4 +56,4 @@ COMPONTENTES ELECTRÓNICOS
     </ol>
 ..
 
-.. include:: firmware.rst
+#.. include:: firmware.rst

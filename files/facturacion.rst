@@ -1,7 +1,7 @@
-HARDWARE
-########
+FACTURACIÓN ELECTRÓNICA
+#######################
 
-COMPONTENTES NEUMÁTICOS
+FA
 ========================
 
 .. raw:: html

@@ -1,5 +1,5 @@
-FIRMWARE
-========
+DIARIOS CONTABLES
+=================
 
 .. raw:: html
 
