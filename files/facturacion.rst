@@ -1,8 +1,11 @@
 FACTURACIÓN ELECTRÓNICA
 #######################
 
-Customer invoices
-~~~~~~~~~~~~~~~~~
+Clientes
+========
+
+Factura
+~~~~~~~
 
 :guilabel:`Customer invoices` are electronic documents that, when validated, are sent to SRI. These
 documents can be created from your sales order or manually. They must contain the following data:
@@ -17,8 +20,9 @@ documents can be created from your sales order or manually. They must contain th
    :align: center
    :alt: Customer invoice for Ecuador.
 
-Customer credit note
-~~~~~~~~~~~~~~~~~~~~
+
+Nota de Crédito
+~~~~~~~~~~~~~~~
 
 The :doc:`Customer credit note <../accounting/customer_invoices/credit_notes>` is an
 electronic document that, when validated, is sent to SRI. It is necessary to have a validated
@@ -60,8 +64,8 @@ then validate it. Before validating the credit note, review the following inform
    :align: center
    :alt: Customer Credit Note for Ecuador.
 
-Customer debit note
-~~~~~~~~~~~~~~~~~~~
+Nota de Débito
+~~~~~~~~~~~~~~
 
 The :guilabel:`Customer debit note` is an electronic document that, when validated, is sent to SRI.
 It is necessary to have a validated (posted) invoice in order to register a debit note. On the
@@ -93,8 +97,9 @@ the following information:
    :align: center
    :alt: Customer Debit Note for Ecuador.
 
-Purchase Documents
-------------------
+
+Proveedores
+===========
 
 Vendor bill
 ~~~~~~~~~~~
