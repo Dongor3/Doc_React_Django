@@ -3,8 +3,7 @@ LOCALIZACIÓN ECUADOR OCA
 
 **DESCRIPCIÓN**
 
-El objetivo de OpenVenti es diseñar un Respirador Artificial que cualquiera pueda construir en cualquier país, para mitigar el problema que hoy en día existe en los hospitales del mundo, 
-y dar una oportunidad a miles de pacientes que son devueltos a casa sin esperanza de sobrevivir.”
+Documentación de la localización de Odoo para Ecuador, desarrollada por OCA.
 
 **CONTENIDO**
 
