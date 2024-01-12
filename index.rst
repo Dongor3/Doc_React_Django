@@ -14,9 +14,9 @@ y dar una oportunidad a miles de pacientes que son devueltos a casa sin esperanz
    
    files/configuracion
    files/diarios
-   filesfacturacion
+   files/facturacion
    files/retenciones
-   files/liqudacion_compra
+   files/liqudaciones_compra
  
   
    
