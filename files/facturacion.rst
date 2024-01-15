@@ -101,8 +101,8 @@ the following information:
 Proveedores
 ===========
 
-Vendor bill
-~~~~~~~~~~~
+Factura
+~~~~~~~
 
 The :guilabel:`Vendor bill` is a non-electronic document for your company, this document is issued
 by your vendor when your company generates a purchase.
