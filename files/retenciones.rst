@@ -1,88 +1,86 @@
 RETENCIONES
 ###########
 
-DIARIO CONTABLE
-===============
+Diario para Retención
+---------------------
 
-Retención
----------
+Debe definirse un Diario de Retenciones, vaya a :menuselection:`Contabilidad --> Configuración -->
+Contabilidad:  Diarios` donde deberá configurar la siguiente información:
 
-A Withholding Journal must be defined, go to go to :menuselection:`Accounting --> Configuration -->
-Accounting:  Journals` where you need to configure the following information:
+- :guilabel:`Nombre del Diario`: en este formato `[Entidad Emisora]-[Punto de Emisión] [Tipo de Documento]`, por
+  ejemplo: `001-001 Retención`.
+- :guilabel:`Type`: se refiere al tipo de diario, seleccione `Miscellaneous`.
+- :guilabel:`Tipo de Retención`: Configurar Retención de Compras.
+- :guilabel:`Use Documents?`: esta casilla se marca automáticamente, déjela marcada.
+- :guilabel:`Emission Entity`: configurar el número de establecimiento.
+- :guilabel:`Punto de Emisión`: configurar el punto de impresión.
+- :guilabel:`Dirección de emisión`: configurar la dirección del establecimiento.
+- :guilabel:`Cuenta por defecto`: configurar la cuenta de ingresos por defecto.
+- :guilabel:`Código corto`: Es el código único para la secuencia de asientos contables, introduzca un
+  código único de 5 dígitos, por ejemplo: `RT001`.
 
-- :guilabel:`Journal Name`: in this format `[Emission Entity]-[Emission Point] [Document Type]`, for
-  example: `001-001 Withholding`.
-- :guilabel:`Type`: refers to the type of journal, select `Miscellaneous`.
-- :guilabel:`Withhold Type`: Configure Purchase Withholding.
-- :guilabel:`Use Documents?`: this checkbox is automatically checked, leave it checked.
-- :guilabel:`Emission Entity`: configure the establishment number.
-- :guilabel:`Emission Point`: configure the printer point.
-- :guilabel:`Emission address`: configure the address of the establishment.
-- :guilabel:`Default account`: configure the default income account.
-- :guilabel:`Short Code`: This is the unique code for the sequence of accounting entries, enter a
-  unique 5-digit code, for example: `RT001`
-
-.. image:: ecuador/withhold.png
+.. imagen:: ecuador/withhold.png
    :align: center
-   :alt: Configuring withholding for Ecuador electronic document type of Withholding.
+   :alt: Configuración de la retención para Ecuador tipo de documento electrónico de Retención.
 
 .. note::
-   In the :guilabel:`Advanced Settings` tab, check the :guilabel:`Electronic Invoicing` checkbox to
-   enable the sending of electronic invoicing for the withholding.
+   En la pestaña :guilabel:`Configuración avanzada`, active la casilla :guilabel:`Facturación electrónica` para
+   habilitar el envío de facturación electrónica de la retención.
+
 
 
 Retención de cliente
 ~~~~~~~~~~~~~~~~~~~~
 
-The :guilabel:`Customer withholding` is a non-electronic document for your company, this document is
-issued by the client in order to apply a withholding to the sale.
+El :guilabel:`Retención cliente` es un documento no electrónico para su empresa, este documento es
+emitido por el cliente para aplicar una retención a la venta.
 
-It is necessary to have a validated (posted) invoice in order to register a customer withholding. On
-the invoice there is a button named :guilabel:`Add Withhold`,  click on this button to be directed
-to the :guilabel:`Customer withholding` form, then complete the following information:
+Es necesario disponer de una factura validada (contabilizada) para poder registrar una retención de cliente. En
+la factura hay un botón llamado :guilabel:`Add Withhold`, haga clic en este botón para ser dirigido
+haga clic en este botón para acceder al formulario :guilabel:`Retención de cliente` y, a continuación, complete la siguiente información:
 
-- :guilabel:`Document Number`: type the withholding number.
-- :guilabel:`Withhold Lines`: select the taxes that the customer is withholding.
+- :guilabel:`Número de documento`: escriba el número de retención.
+- :guilabel:`Líneas de Retención`: seleccione los impuestos que retiene el cliente.
 
-Before validating the withholding, review that the amounts for each tax are the same as the original
-document.
+Antes de validar la retención, revise que los importes de cada impuesto coincidan con los del documento original.
+documento.
 
-.. image:: ecuador/customer-withhold.png
+.. image:: ecuador/retencion-cliente.png
    :align: center
-   :alt: Customer withhold for Ecuador.
+   :alt: Retención al cliente para Ecuador.
+
 
 
 Retención de proveedor
 ~~~~~~~~~~~~~~~~~~~~~~
 
-The :guilabel:`Purchase withholding` is an electronic document that, when validated, is sent to SRI.
+La :guilabel:`Retención de compras` es un documento electrónico que, una vez validado, se envía al SRI.
 
-It is necessary to have an invoice in a validated state in order to register a :guilabel:`Purchase
-withholding`. On the invoice, there is a button named :guilabel:`Add Withhold`, click on this button
-to be directed to the :guilabel:`Withholding` form, then complete the following information:
+Es necesario disponer de una factura en estado validado para poder registrar una :guilabel:`Purchase
+de compras`. En la factura, hay un botón llamado :guilabel:`Añadir Retención`, haga clic en este botón
+para acceder al formulario :guilabel:`Withholding` y rellene los siguientes datos:
 
-- :guilabel:`Document number`: type the document number (sequence), you will only have to do this
-  once, then the sequence will be automatically assigned for the next documents.
-- :guilabel:`Withhold lines`: The taxes appear automatically according to the configuration of
-  products and vendors, you should review if the taxes and tax support are correct, and, if it is
-  not correct, you can edit and select the correct taxes and tax support.
+- :guilabel:`Número de documento`: escriba el número de documento (secuencia), sólo tendrá que hacerlo
+  sólo tendrá que hacerlo una vez, la secuencia se asignará automáticamente para los siguientes documentos.
+- :guilabel:`Líneas de retención`: Los impuestos aparecen automáticamente según la configuración de
+  productos y proveedores, debe revisar si los impuestos y el soporte fiscal son correctos, y, si no es
+  no es correcto, puede editar y seleccionar los impuestos y soporte fiscal correctos.
 
-Once you review the information you can validate the :guilabel:`Withholding`.
+Una vez revisada la información puede validar la :guilabel:`Retención`.
 
-.. image:: ecuador/purchase-withhold.png
+.. image:: ecuador/compra-retencion.png
    :align: center
-   :alt: Purchase withhold for Ecuador.
+   :alt: Retención de compras para Ecuador.
 
-.. note::
-   You can't change the tax support for one that was not included in the configuration of the taxes
-   used on the :guilabel:`Vendor Bill`. To do so, go to the tax applied on the :guilabel:`Vendor
-   Bill` and change the :guilabel:`Tax Support` there.
+.. nota::
+   No se puede cambiar el soporte de impuestos por uno que no se haya incluido en la configuración de los impuestos
+   utilizados en la :guilabel:`Factura Proveedor`. Para ello, vaya al impuesto aplicado en la :guilabel:`Factura de proveedor
+   y cambie allí el :guilabel:`Soporte fiscal`.
 
-A withholding tax can be divided into two or more lines, this will depend on whether two or more
-withholdings percentages apply.
+Una retención puede dividirse en dos o más líneas, esto dependerá de si se aplican dos o más
+porcentajes de retención.
 
 .. example::
-   The system suggests a VAT withholding of 30% with tax support 01, you can add your VAT
-   withholding of 70% in a new line with the same tax support, the system will allow you as long as
-   the total of the bases matches the total from the :guilabel:`Vendor Bill`.
-
+   El sistema le propone una retención de IVA del 30% con soporte fiscal 01, usted puede añadir su retención de IVA del
+   retención del 70% en una nueva línea con el mismo soporte fiscal, el sistema se lo permitirá siempre y cuando
+   el total de las bases coincida con el total de la :guilabel:`Factura Proveedor`.
