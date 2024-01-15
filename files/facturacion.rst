@@ -1,4 +1,4 @@
-FACTURACIÓN ELECTRÓNICA
+Facturación Electrónica
 #######################
 
 Clientes
