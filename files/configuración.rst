@@ -1,7 +1,5 @@
-=======
 
-
-Introduction
+Introducción
 ============
 
 With the Ecuadorian localization you can generate electronic documents with its XML, Fiscal folio,
@@ -29,11 +27,11 @@ Here are some terms that are essential on the Ecuadorian localization:
 - **RIMPE**: stands for *Regimen Simplificado para Emprendedores y Negocios*, the type of taxpayer
   qualified for SRI.
 
-Configuration
+Configuración
 =============
 
-Modules installation
---------------------
+Instalación de los Módulos
+-------------------------
 
 :ref:`Install <general/install>` the following modules to get all the features of the Ecuadorian
 localization:
@@ -45,16 +43,37 @@ localization:
    * - Name
      - Technical name
      - Description
-   * - :guilabel:`Ecuadorian - Accounting`
-     - `l10n_ec`
+   * - :guilabel:`Localizacón Base`
+     - `l10n_ec_base`
      - The default :doc:`fiscal localization package <../fiscal_localizations>`, adds accounting
        characteristics for the Ecuadorian localization, which represent the minimum configuration
        required for a company to operate in Ecuador according to the guidelines set by the
        :abbr:`SRI (servicio de rentas internas)`. The module's installation automatically loads:
        Chart of Accounts, taxes, documents types, tax support types. Additionally, the generation of
        forms 103 and 104 are automatic.
-   * - :guilabel:`Ecuadorian Accounting EDI`
+   * - :guilabel:`Documentos Electrónicos`
      - `l10n_ec_edi`
+     - Includes all the technical and functional requirements to generate and validate
+       :doc:`Electronics Documents
+       <../accounting/customer_invoices/electronic_invoicing>`, based on the Technical
+       documentation published by the SRI. The authorized documents are: Invoices, Credit Notes,
+       Debit Notes, Withholdings and Purchase liquidations.
+       * - :guilabel:`Organización Territorial`
+     - `l10n_ec_ote`
+     - Includes all the technical and functional requirements to generate and validate
+       :doc:`Electronics Documents
+       <../accounting/customer_invoices/electronic_invoicing>`, based on the Technical
+       documentation published by the SRI. The authorized documents are: Invoices, Credit Notes,
+       Debit Notes, Withholdings and Purchase liquidations.
+       * - :guilabel:`Retenciones Venta/Compra`
+     - `l10n_ec_ote`
+     - Includes all the technical and functional requirements to generate and validate
+       :doc:`Electronics Documents
+       <../accounting/customer_invoices/electronic_invoicing>`, based on the Technical
+       documentation published by the SRI. The authorized documents are: Invoices, Credit Notes,
+       Debit Notes, Withholdings and Purchase liquidations.
+           * - :guilabel:`Guias de Remisión`
+     - `l10n_ec_ote`
      - Includes all the technical and functional requirements to generate and validate
        :doc:`Electronics Documents
        <../accounting/customer_invoices/electronic_invoicing>`, based on the Technical
@@ -65,30 +84,30 @@ localization:
    When you install a database from scratch selecting `Ecuador` as the country, Odoo automatically
    installs the base module :guilabel:`Ecuadorian - Accounting`.
 
-Configure your company
-----------------------
+Configurar Compañia
+-------------------
 
-To configure your company information, go to the :guilabel:`Contacts` app and search the name given
-to your company or activate :ref:`developer mode <developer-mode>` and go to :menuselection:`Company
---> Contact` and then edit the contact to configure the following information:
+Para configurar la información de su empresa, vaya a la aplicación :guilabel:`Contacts` y busque el nombre dado
+a su empresa o active :ref:`modo-desarrollador <modo-desarrollador>` y vaya a :menuselection:`Empresa
+--> Contacto` y luego edita el contacto para configurar la siguiente información:
 
-#. Check the :guilabel:`Company` option on top
+#. Marque la opción :guilabel:`Empresa` en la parte superior
 
-   - :guilabel:`Name`
-   - :guilabel:`Address`
-   - :guilabel:`Identification Number`
-   - :guilabel:`Taxpayer Type`
-   - :guilabel:`Phone`
+   - :guilabel:`Nombre
+   - :guilabel:`Dirección`
+   - :guilabel:`Número de identificación`
+   - :guilabel:`Tipo de contribuyente
+   - :guilabel:`Teléfono`
    - :guilabel:`Email`
 
-#. Upload company logo and save
+#. Suba el logotipo de la empresa y s
 
-.. image:: ecuador/ecuador-company.png
+.. image:: img/companie.png
    :align: center
    :alt: Populate company data for Ecuador in Odoo Contacts.
 
-Electronic documents
---------------------
+Documentos Electrónicos
+-----------------------
 
 To upload your information for electronic documents go to :menuselection:`Accounting -->
 Configuration --> Settings` and search for :command:`Ecuadorian Localization`.
@@ -181,11 +200,11 @@ Customer Invoice, Credit Notes and Debit Notes need to use the same journal as t
 .. seealso::
    :doc:`../accounting/customer_invoices/electronic_invoicing`
 
-Configure master data
----------------------
+Configuracón de Datos Maestros
+------------------------------
 
-Chart of accounts
-~~~~~~~~~~~~~~~~~
+Plan de Cuentas
+~~~~~~~~~~~~~~~
 
 The :doc:`chart of accounts <../accounting/get_started/chart_of_accounts>`
 is installed by default as part of the set of data included in the localization module, the accounts
@@ -196,7 +215,7 @@ Companies, which is grouped in several categories and is compatible with NIIF ac
 
 You can add or delete accounts according to the company's needs.
 
-Products
+Productos
 ~~~~~~~~
 
 In addition to the basic information in your products, you must add the configuration of the
@@ -208,7 +227,7 @@ Go to :menuselection:`Accounting --> Vendors:  Products` under the tab "Purchase
    :align: center
    :alt: Product for Ecuador.
 
-Contacts
+Contactos
 ~~~~~~~~
 
 Configure the next information when you create a contact:
@@ -231,8 +250,8 @@ Configure the next information when you create a contact:
    withholding will apply when you use this contact on Vendor Bill, and then create a withholding
    from there.
 
-Review your taxes
-~~~~~~~~~~~~~~~~~
+Revisión de Impuestos
+~~~~~~~~~~~~~~~~~~~~~
 
 As part of the localization module, taxes are automatically created with its configuration and
 related financial accounts.
@@ -264,8 +283,8 @@ configuration of the existing taxes.
    :align: center
    :alt: Taxes with tax support for Ecuador.
 
-Review your Document Types
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+Tipos de Documentos Contables
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Some accounting transactions like *Customer Invoices* and *Vendor Bills* are classified by document
 types. These are defined by the government fiscal authorities, in this case by the SRI.
@@ -281,13 +300,7 @@ fill anything there.
    :align: center
    :alt: Document types for Ecuador.
 
-Workflows
-=========
 
-Once you have configured your database, you can register your documents.
-
-Sales documents
----------------
 
 
 
