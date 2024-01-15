@@ -1,5 +1,5 @@
-DIARIOS CONTABLES
-=================
+Diarios 
+=======
 
 
 Diario para Retención

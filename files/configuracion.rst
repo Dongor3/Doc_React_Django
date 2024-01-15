@@ -23,7 +23,7 @@ localization:
 
 .. list-table::
    :header-rows: 1
-   :widths: 25 25 50
+   :widths: 25 25 150
 
    * - Name
      - Technical name
@@ -42,28 +42,8 @@ localization:
        :doc:`Electronics Documents
        <../accounting/customer_invoices/electronic_invoicing>`, based on the Technical
        documentation published by the SRI. The authorized documents are: Invoices, Credit Notes,
-       Debit Notes, Withholdings and Purchase liquidations.
-   * - :guilabel:`Organización Territorial`
-     - `l10n_ec_ote`
-     - Includes all the technical and functional requirements to generate and validate
-       :doc:`Electronics Documents
-       <../accounting/customer_invoices/electronic_invoicing>`, based on the Technical
-       documentation published by the SRI. The authorized documents are: Invoices, Credit Notes,
-       Debit Notes, Withholdings and Purchase liquidations.
-   * - :guilabel:`Retenciones Venta/Compra`
-     - `l10n_ec_ote`
-     - Includes all the technical and functional requirements to generate and validate
-       :doc:`Electronics Documents
-       <../accounting/customer_invoices/electronic_invoicing>`, based on the Technical
-       documentation published by the SRI. The authorized documents are: Invoices, Credit Notes,
-       Debit Notes, Withholdings and Purchase liquidations.
-   * - :guilabel:`Guias de Remisión`
-     - `l10n_ec_delivery_note`
-     - Includes all the technical and functional requirements to generate and validate
-       :doc:`Electronics Documents
-       <../accounting/customer_invoices/electronic_invoicing>`, based on the Technical
-       documentation published by the SRI. The authorized documents are: Invoices, Credit Notes,
-       Debit Notes, Withholdings and Purchase liquidations.
+  
+
 
 .. note::
    When you install a database from scratch selecting `Ecuador` as the country, Odoo automatically
