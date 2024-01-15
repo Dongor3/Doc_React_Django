@@ -193,26 +193,26 @@ Go to :menuselection:`Accounting --> Vendors:  Products` under the tab "Purchase
 Contactos
 ~~~~~~~~
 
-Configure the next information when you create a contact:
+Configure la siguiente información cuando cree un contacto:
 
-- Check the :guilabel:`Company` option on top if it is a contact with RUC, or check
-  :guilabel:`Individual` if it is a contact with cedula or passport.
-- :guilabel:`Name`
-- :guilabel:`Address`: :guilabel:`Street` is a required field to confirm the Electronic Invoice.
-- :guilabel:`Identification Number`: select an identification type `RUC`, `Cedula`, or `Passport`.
-- :guilabel:`Taxpayer Type`: select the contact's SRI Taxpayer Type.
-- :guilabel:`Phone`
-- :guilabel:`Email`
+- Marque la opción :guilabel:`Empresa` en la parte superior si es un contacto con RUC, o marque
+  :guilabel:`Individual` si es un contacto con cedula o pasaporte.
+- :guilabel:`Nombre
+- :guilabel:`Dirección`: :guilabel:`Calle` es un campo obligatorio para confirmar la Factura Electrónica.
+- :guilabel:`Número de Identificación`: seleccione un tipo de identificación `RUC`, `Cédula` o `Pasaporte`.
+- :guilabel:`Tipo de Contribuyente`: seleccione el Tipo de Contribuyente del ISR del contacto.
+- :guilabel:`Teléfono`
+- :guilabel:`Correo electrónico`
 
 .. image:: ecuador/contacts.png
-   :align: center
-   :alt: Contacts for Ecuador.
+   :align: centro
+   :alt: Contactos para Ecuador.
 
-.. note::
-   The :guilabel:`SRI Taxpayer Type` has inside the configuration of which VAT and Profit
-   withholding will apply when you use this contact on Vendor Bill, and then create a withholding
-   from there.
-
+.. nota::
+   La :guilabel:`SRI Tipo de Contribuyente` tiene dentro la configuración de que IVA y Ganancias
+   retenciones se aplicarán al utilizar este contacto en la Factura de Proveedor, y luego crear una retención
+   desde allí.
+   
 Revisión de Impuestos
 ~~~~~~~~~~~~~~~~~~~~~
 
