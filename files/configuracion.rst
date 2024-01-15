@@ -2,36 +2,21 @@
 Introducción
 ============
 
-With the Ecuadorian localization you can generate electronic documents with its XML, Fiscal folio,
-with electronic signature and direct connection to tax authority SRI.
+Con la localización ecuatoriana puede generar documentos electrónicos con su XML, folio Fiscal,
+con firma electrónica y conexión directa al SRI.
 
-The supported documents are Invoices, Credit Notes, Debit Notes, Purchase Liquidations and
-Withholds.
+Los documentos soportados son Facturas, Notas de Crédito, Notas de Débito, Liquidaciones de Compra y
+Retenciones de Venta/Compra, Guías de Remisión.
 
-The localization also Includes automations to easily predict the withholding tax to be applied to
-each purchase invoice.
+La organización territorial ecuatoriana está incluida en la localización, lo que permite agregar a los Contactos
+Provincias, Cantones y Parroquias.
 
-.. seealso::
-   - `App Tour - Localización de Ecuador <https://www.youtube.com/watch?v=BQOXVSDeeK8>`_
-   - `Smart Tutorial - Localización de Ecuador <https://www.odoo.com/slides/smart-tutorial-localizacion-de-ecuador-170>`_
+.. note::
+   La localización ecuatoriana está disponible en el siguiente repositorio
 
-Glossary
---------
-
-Here are some terms that are essential on the Ecuadorian localization:
-
-- **SRI**: meaning *Servicio de Rentas Internas*, the government organization that enforces pay of
-  taxes in Ecuador.
-- **EDI**: stands for *Electronic Data Interchange*, which refers to the sending of Electronics
-  Documents.
-- **RIMPE**: stands for *Regimen Simplificado para Emprendedores y Negocios*, the type of taxpayer
-  qualified for SRI.
-
-Configuración
-=============
 
 Instalación de los Módulos
--------------------------
+--------------------------
 
 :ref:`Install <general/install>` the following modules to get all the features of the Ecuadorian
 localization:
@@ -301,6 +286,18 @@ fill anything there.
    :alt: Document types for Ecuador.
 
 
+
+Glossary
+--------
+
+Here are some terms that are essential on the Ecuadorian localization:
+
+- **SRI**: meaning *Servicio de Rentas Internas*, the government organization that enforces pay of
+  taxes in Ecuador.
+- **EDI**: stands for *Electronic Data Interchange*, which refers to the sending of Electronics
+  Documents.
+- **RIMPE**: stands for *Regimen Simplificado para Emprendedores y Negocios*, the type of taxpayer
+  qualified for SRI.
 
 
 
