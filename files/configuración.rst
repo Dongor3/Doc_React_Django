@@ -295,33 +295,5 @@ Sales documents
 
 
 
-Purchase Documents
-------------------
 
-Vendor bill
-~~~~~~~~~~~
-
-The :guilabel:`Vendor bill` is a non-electronic document for your company, this document is issued
-by your vendor when your company generates a purchase.
-
-The bills can be created from the purchase order or manually, it must contain the following
-information:
-
-- :guilabel:`Vendor`: type the vendor's information.
-- :guilabel:`Bill Date`: select the date of invoice.
-- :guilabel:`Journal`: it is the journal for vendor bills.
-- :guilabel:`Document Type`: this is the document type `(01) Invoice`
-- :guilabel:`Document number`: type the document number.
-- :guilabel:`Payment Method (SRI)`: select how the invoice is going to be paid.
-- :guilabel:`Products`: specify the product with the correct taxes.
-
-.. image:: ecuador/purchase-invoice.png
-   :align: center
-   :alt: Purchases for Ecuador.
-
-.. important::
-   When creating the purchase withholding, verify that the bases (base amounts) are correct. If you
-   need to edit the amount of the tax in the :guilabel:`Vendor bill`, click the :guilabel:`Edit`
-   button. Otherwise, from the :guilabel:`Journal Items` tab click the :guilabel:`Edit` button and
-   set the adjustment to go where you want.
 

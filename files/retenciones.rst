@@ -4,8 +4,8 @@ RETENCIONES
 DIARIO CONTABLE
 ===============
 
-Withholding
------------
+Retención
+---------
 
 A Withholding Journal must be defined, go to go to :menuselection:`Accounting --> Configuration -->
 Accounting:  Journals` where you need to configure the following information:
@@ -31,8 +31,8 @@ Accounting:  Journals` where you need to configure the following information:
    enable the sending of electronic invoicing for the withholding.
 
 
-Sales withholding
-~~~~~~~~~~~~~~~~~
+Retención de cliente
+~~~~~~~~~~~~~~~~~~~~
 
 The :guilabel:`Customer withholding` is a non-electronic document for your company, this document is
 issued by the client in order to apply a withholding to the sale.
@@ -52,8 +52,8 @@ document.
    :alt: Customer withhold for Ecuador.
 
 
-Purchase withholding
-~~~~~~~~~~~~~~~~~~~~
+Retención de proveedor
+~~~~~~~~~~~~~~~~~~~~~~
 
 The :guilabel:`Purchase withholding` is an electronic document that, when validated, is sent to SRI.
 
