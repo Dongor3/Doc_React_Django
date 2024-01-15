@@ -18,7 +18,7 @@ Provincias, Cantones y Parroquias.
 Instalación de los Módulos
 --------------------------
 
-:ref:`Install <general/install>` the following modules to get all the features of the Ecuadorian
+:ref:`Install <general/install>` Los módulos pertenicien
 localization:
 
 .. list-table::
@@ -30,18 +30,18 @@ localization:
      - Description
    * - :guilabel:`Localizacón Base`
      - `l10n_ec_base`
-     - The default :doc:`fiscal localization package <../fiscal_localizations>`, adds accounting
-       characteristics for the Ecuadorian localization, which represent the minimum configuration
-       required for a company to operate in Ecuador according to the guidelines set by the
+     - El paquete por defecto :doc:`fiscal localization package <../fiscal_localizations>`, agrega características contables
+       características para la localización ecuatoriana, las cuales representan la configuración mínima
+       requerida para que una empresa opere en Ecuador de acuerdo a los lineamientos establecidos por la
        :abbr:`SRI (servicio de rentas internas)`. The module's installation automatically loads:
-       Chart of Accounts, taxes, documents types, tax support types. Additionally, the generation of
-       forms 103 and 104 are automatic.
+       Plan contable, impuestos, tipos de documentos, tipos de soporte fiscal. Además, la generación de
+       formularios 103 y 104 es automática.
    * - :guilabel:`Documentos Electrónicos`
      - `l10n_ec_edi`
-     - Includes all the technical and functional requirements to generate and validate
-       :doc:`Electronics Documents
-       <../accounting/customer_invoices/electronic_invoicing>`, based on the Technical
-       documentation published by the SRI. The authorized documents are: Invoices, Credit Notes,
+     - Incluye todos los requisitos técnicos y funcionales para generar y validar
+       :doc:`Documentos Electrónicos
+       <../contabilidad/facturas_clientes/factura_electronica>`, basado en la Documentación Técnica
+       publicada por el SRI. Los documentos autorizados son: Facturas, Notas de Crédito,Liquidaciones de Compra 
   
 
 
@@ -74,40 +74,38 @@ a su empresa o active :ref:`modo-desarrollador <modo-desarrollador>` y vaya a :m
 Documentos Electrónicos
 -----------------------
 
-To upload your information for electronic documents go to :menuselection:`Accounting -->
-Configuration --> Settings` and search for :command:`Ecuadorian Localization`.
+Para cargar su información para documentos electrónicos vaya a :menuselection:`Contabilidad -->
+Configuración --> Ajustes` y busque :comando:`Localización Ecuatoriana`.
 
-Configure the next information:
 
-- :guilabel:`Company legal name`
-- :guilabel:`Use production servers`: check the checkbox if your company is going to do electronic
-  documents in the production environment. If you want to use the testing environment for electronic
-  documents then keep the checkbox unchecked.
-- :guilabel:`Regime`: select if your company is in General Regular or is qualified as RIMPE.
-- :guilabel:`Forced to keep accounting books`: check the checkbox if your company has this
-  condition.
-- :guilabel:`Default taxes for withholdings`
-- :guilabel:`Issue withholds`: check the checkbox if your company is going to do electronic
-  withholds.
-- :guilabel:`Withhold consumibles`: put the code of the withholding for when you buy goods.
-- :guilabel:`Withhold services`: put the code of the withholding for when you buy services.
-- :guilabel:`Withhold credit card`: put the code of the withholding for when you buy with credit
-  card
-- :guilabel:`Withhold agent number`: put the company withholding agent resolution number, if
-  applicable for your company.
-- :guilabel:`Electronic Certificate File`: upload electronic certificate and password, then save it.
-- :guilabel:`Special tax contributor number`: if your company is qualified as a special taxpayer,
-  fill out this field with it's corresponding tax contributor number.
+Configure la siguiente información:
 
-.. image:: ecuador/electronic-signature.png
+
+- :guilabel:`Nombre legal de la empresa`.
+- :guilabel:`Utilizar servidores de producción`: marque la casilla si su empresa va a realizar documentos electrónicos en un entorno de producción.
+  documentos en el entorno de producción. Si desea utilizar el entorno de pruebas para los documentos
+  entonces mantenga la casilla desmarcada.
+- :guilabel:`Régimen`: seleccione si su empresa está en Régimen General Ordinario o está calificada como RIMPE.
+- :guilabel:`Obligado a llevar libros contables`: marque la casilla si su empresa tiene esta
+  condición.
+- :guilabel:`Impuestos por defecto para las retenciones`.
+- :guilabel:`Emitir retenciones`: marque la casilla si su empresa va a realizar retenciones electrónicas.
+  electrónicas.
+- :guilabel:`Retener consumibles`: ponga el código de la retención para cuando compre bienes.
+- :guilabel:`Retener servicios`: ponga el código de la retención para cuando compre servicios.
+- :guilabel:`Retener tarjeta de crédito`: ponga el código de la retención para cuando compre con tarjeta de crédito
+  tarjeta de crédito
+- :guilabel:`Número de agente de retención`: ponga el número de resolución del agente de retención de la empresa, si
+  aplicable a su empresa.
+- :guilabel:`Archivo de certificado electrónico`: cargue el certificado electrónico y la contraseña, y guárdelo.
+- :guilabel:`Número de contribuyente especial`: si su empresa está calificada como contribuyente especial,
+  rellene este campo con su correspondiente número de contribuyente.
+
+.. image:: ecuador/firma-electronica.png
    :align: center
-   :alt: Electronic signature for Ecuador.
+   :alt: Firma electrónica para Ecuador.
 
-.. note::
-   When configuring the withholdings in the configuration menu, these suggested withholdings are
-   only for domestic suppliers when no withholdings are setup on their *Taxpayer Type*. Moreover,
-   the Credit Card withholding set up is always used when a Credit or Debit Card SRI Payment Metho
-   is used.
+
 
 VAT withholding
 ---------------
@@ -127,8 +125,8 @@ You must configure the withholding percentage that applies for each type of taxp
    In the case that the :guilabel:`Taxpayer Type` is `RIMPE`, also configure the :guilabel:`Profit
    Withholding` percentage.
 
-Printer points
---------------
+Puntos de Emisión
+-----------------
 
 To configure your printer points, go to :menuselection:`Accounting --> Configuration --> Accounting:
 Journals`.
@@ -218,48 +216,49 @@ Configure the next information when you create a contact:
 Revisión de Impuestos
 ~~~~~~~~~~~~~~~~~~~~~
 
-As part of the localization module, taxes are automatically created with its configuration and
-related financial accounts.
+Como parte del módulo de localización, los impuestos se crean automáticamente con su configuración y
+cuentas financieras relacionadas.
 
-.. image:: ecuador/taxes.png
+.. image:: ecuador/impuestos.png
+   :align: centro
+   :alt: Impuestos para Ecuador.
+
+Se han configurado automáticamente las siguientes opciones:
+
+- :guilabel:`Soporte de Impuestos`: a configurar solo en el impuesto IVA, esta opción es útil cuando se
+  registrar retenciones de compras.
+- :guilabel:`Código ATS`: para configurar sólo en códigos de retención de IVA, es importante cuando
+  registrar la retención.
+- :guilabel:`Retenciones IRPF`: configurar los códigos del modelo 104 si es un impuesto IVA y configurar los códigos
+  del formulario 103 si es una retención de IRPF.
+- :guilabel:`Nombre del impuesto`:
+
+  - Para el impuesto IVA, formatee el nombre como: `IVA [porcentaje] (104, [código formulario] [código soporte impuesto] [soporte impuesto
+    nombre corto])`.
+  - Para el código de retención del impuesto sobre la renta, formatee el nombre como: `Código ATS [Porcentaje de retención] [retención
+    nombre]`
+
+Una vez instalado el módulo de Ecuador, los impuestos más comunes se configuran automáticamente. Si usted
+necesita crear uno adicional, puede hacerlo, para lo cual debe basarse en la
+configuración de los impuestos existentes.
+
+.. image:: ecuador/impuestos-con-impuestos-soporte.png
    :align: center
-   :alt: Taxes for Ecuador.
+   :alt: Impuestos con soporte tributario para Ecuador.
 
-The following options have been automatically configured:
-
-- :guilabel:`Tax Support`: to be configured only in the IVA tax, this option is useful when you
-  register purchase withholdings.
-- :guilabel:`Code ATS`: to be configured only for income tax withholding codes, it is important when
-  you register the withholding.
-- :guilabel:`Tax Grids`: configure the codes of 104 form if it is a IVA tax and configure the codes
-  of 103 form if it is a  income tax withholding code.
-- :guilabel:`Tax Name`:
-
-  - For IVA tax, format the name as: `IVA [percent] (104, [form code] [tax support code] [tax support
-    short name])`
-  - For income tax withholding code, format the name as: `Code ATS [Percent of withhold] [withhold
-    name]`
-
-Once the Ecuador module is installed, the most common taxes are automatically configured. If you
-need to create an additional one, you can do so, for which you must base yourself on the
-configuration of the existing taxes.
-
-.. image:: ecuador/taxes-with-tax-support.png
-   :align: center
-   :alt: Taxes with tax support for Ecuador.
 
 Tipos de Documentos Contables
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Some accounting transactions like *Customer Invoices* and *Vendor Bills* are classified by document
-types. These are defined by the government fiscal authorities, in this case by the SRI.
+Algunas transacciones contables como *Facturas de clientes* y *Facturas de proveedores* se clasifican por tipos de documentos.
+documentos. Estos son definidos por las autoridades fiscales gubernamentales, en este caso por el SRI.
 
-Each document type can have a unique sequence per journal where it is assigned. As part of the
-localization, the document type includes the country on which the document is applicable; also the
-data is created automatically when the localization module is installed.
+Cada tipo de documento puede tener una secuencia única por diario donde se asigna. Como parte de la
+Como parte de la localización, el tipo de documento incluye el país en el que el documento es aplicable.
+datos se crean automáticamente cuando se instala el módulo de localización.
 
-The information required for the document types is included by default so the user does not need to
-fill anything there.
+La información requerida para los tipos de documentos se incluye por defecto, por lo que el usuario no necesita
+rellenar nada.
 
 .. image:: ecuador/document-types.png
    :align: center
@@ -267,17 +266,6 @@ fill anything there.
 
 
 
-Glossary
---------
-
-Here are some terms that are essential on the Ecuadorian localization:
-
-- **SRI**: meaning *Servicio de Rentas Internas*, the government organization that enforces pay of
-  taxes in Ecuador.
-- **EDI**: stands for *Electronic Data Interchange*, which refers to the sending of Electronics
-  Documents.
-- **RIMPE**: stands for *Regimen Simplificado para Emprendedores y Negocios*, the type of taxpayer
-  qualified for SRI.
 
 
 
